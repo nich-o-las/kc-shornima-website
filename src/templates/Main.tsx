@@ -16,8 +16,8 @@ const Main = (props: IMainProps) => {
   return (
     <>
       {props.meta}
-      <div className="flex flex-col flex-grow w-full min-h-screen antialiased text-black bg-white">
-        <div className="py-2 border-b border-gray-300 ">
+      <div className="flex flex-col flex-grow w-full min-h-screen antialiased text-black">
+        <div className="fixed z-10 w-full py-2 bg-white border-b border-gray-300 shadow-md">
           <div className="items-center justify-between max-w-screen-lg px-6 mx-auto lg:flex">
             <div className="flex justify-between text-3xl uppercase font-alfa-slab">
               KC Shornima
@@ -100,7 +100,7 @@ const Main = (props: IMainProps) => {
           </div>
         </div>
 
-        <div className="w-full max-w-screen-lg px-6 mx-auto">
+        <div className="w-full max-w-screen-lg px-6 pt-16 mx-auto">
           <div className="w-full">{props.children}</div>
         </div>
 
