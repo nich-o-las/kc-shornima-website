@@ -1,6 +1,5 @@
 import { ReactNode, useState } from 'react';
 
-import cn from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -51,18 +50,14 @@ const Main = (props: IMainProps) => {
             </div>
 
             <ul
-              className={cn(
-                'lg:flex text-right lg:text-left flex-wrap text-xl',
-                !isExpanded && 'hidden'
-              )}
+              className={`lg:flex text-right lg:text-left flex-wrap text-xl
+                ${!isExpanded && 'hidden'}`}
             >
               <li className="lg:mr-6">
                 <Link href="/">
                   <a
-                    className={cn(
-                      'text-black border-none',
-                      router.pathname === '/' && 'underline'
-                    )}
+                    className={`text-black border-none
+                      ${router.pathname === '/' && 'underline'}`}
                   >
                     Home
                   </a>
@@ -72,10 +67,8 @@ const Main = (props: IMainProps) => {
               <li className="lg:mr-6">
                 <Link href="/shows/">
                   <a
-                    className={cn(
-                      'text-black border-none',
-                      router.pathname === '/shows' && 'underline'
-                    )}
+                    className={`text-black border-none
+                      ${router.pathname === '/shows' && 'underline'}`}
                   >
                     Shows
                   </a>
@@ -85,10 +78,8 @@ const Main = (props: IMainProps) => {
               <li className="lg:mr-6">
                 <Link href="/blog/">
                   <a
-                    className={cn(
-                      'text-black border-none',
-                      router.pathname === '/blog' && 'underline'
-                    )}
+                    className={`text-black border-none
+                      ${router.pathname === '/blog' && 'underline'}`}
                   >
                     Blog
                   </a>
@@ -98,10 +89,8 @@ const Main = (props: IMainProps) => {
               <li className="lg:mr-6">
                 <Link href="/contact/">
                   <a
-                    className={cn(
-                      'text-black border-none',
-                      router.pathname === '/contact' && 'underline'
-                    )}
+                    className={`text-black border-none
+                      ${router.pathname === '/contact' && 'underline'}`}
                   >
                     Contact
                   </a>
