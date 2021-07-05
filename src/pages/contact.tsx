@@ -1,14 +1,14 @@
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
-export default function Blog(): JSX.Element {
+export default function Contact(): JSX.Element {
   return (
     <Main meta={<Meta title="hello" description="world" />}>
       <h1 className="mt-2 text-2xl uppercase font-alfa-slab">Contact</h1>
 
       <form
         name="contact"
-        netlify
+        data-netlify="true"
         className="flex flex-col w-full p-4 mt-2 border shadow-lg"
       >
         <label htmlFor="name" className="lg:text-xl">
