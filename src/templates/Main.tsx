@@ -51,13 +51,13 @@ const Main = (props: IMainProps) => {
 
             <ul
               className={`lg:flex text-right lg:text-left flex-wrap text-xl
-                ${!isExpanded && 'hidden'}`}
+                ${!isExpanded && ' hidden'}`}
             >
               <li className="lg:mr-6">
                 <Link href="/">
                   <a
                     className={`text-black border-none
-                      ${router.pathname === '/' && 'underline'}`}
+                      ${router.pathname === '/' && ' underline'}`}
                   >
                     Home
                   </a>
@@ -68,7 +68,7 @@ const Main = (props: IMainProps) => {
                 <Link href="/shows/">
                   <a
                     className={`text-black border-none
-                      ${router.pathname === '/shows' && 'underline'}`}
+                      ${router.pathname === '/shows' && ' underline'}`}
                   >
                     Shows
                   </a>
@@ -79,7 +79,7 @@ const Main = (props: IMainProps) => {
                 <Link href="/blog/">
                   <a
                     className={`text-black border-none
-                      ${router.pathname === '/blog' && 'underline'}`}
+                      ${router.pathname === '/blog' && ' underline'}`}
                   >
                     Blog
                   </a>
@@ -90,7 +90,7 @@ const Main = (props: IMainProps) => {
                 <Link href="/contact/">
                   <a
                     className={`text-black border-none
-                      ${router.pathname === '/contact' && 'underline'}`}
+                      ${router.pathname === '/contact' && ' underline'}`}
                   >
                     Contact
                   </a>
