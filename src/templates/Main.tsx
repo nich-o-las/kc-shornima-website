@@ -111,8 +111,8 @@ const Main = (props: IMainProps) => {
           </div>
         </div>
 
-        <div className="max-w-screen-lg px-6 mx-auto">
-          <div className="">{props.children}</div>
+        <div className="w-full max-w-screen-lg px-6 mx-auto">
+          <div className="w-full">{props.children}</div>
         </div>
 
         <div className="max-w-screen-lg px-6 py-8 mx-auto mt-auto text-sm text-center border-t border-gray-300 ">

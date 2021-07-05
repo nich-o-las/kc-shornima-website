@@ -14,7 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "classnames": "2.2.6",
+    "classnames": "^2.2.6",
     "next": "^11.0.1",
     "next-seo": "^4.26.0",
     "react": "^17.0.2",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^11.0.1",
+    "@types/classnames": "^2.3.1",
     "@types/node": "^15.12.5",
     "@types/react": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
@@ -49,5 +50,6 @@
     "tailwindcss": "^2.2.4",
     "typescript": "^4.3.4"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "typings": "dist/src/*.d.ts"
 }
