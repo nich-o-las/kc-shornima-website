@@ -9,7 +9,7 @@ export default function Contact(): JSX.Element {
       <form
         name="contact"
         data-netlify="true"
-        className="flex flex-col w-full p-4 mt-2 border shadow-lg"
+        className="flex flex-col w-full mt-2 lg:p-4 lg:border lg:shadow-lg"
       >
         <label htmlFor="name" className="lg:text-xl">
           Name <input type="text" name="name" className="w-full p-2 border" />
