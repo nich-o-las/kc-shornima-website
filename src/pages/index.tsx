@@ -77,6 +77,7 @@ const Index = () => {
 
             <li>
               <a
+                target="blank"
                 href="https://twitter.com/kcshornomnom?lang=en"
                 className="flex items-center w-full space-x-2 text-current lg:space-x-reverse lg:flex-row-reverse"
               >
