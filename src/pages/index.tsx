@@ -17,6 +17,7 @@ const Index = () => {
       }
     >
       <img
+        // eslint-disable-next-line global-require
         src="/assets/images/jo-banner-img.png"
         alt="KC Shornima on stage at Zanies in Nashville, TN."
       />
