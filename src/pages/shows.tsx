@@ -6,7 +6,7 @@ export default function Shows(): JSX.Element {
     <Main
       meta={
         <Meta
-          title="KC Shornima | Shows"
+          title="KC Shornima | Show Calendar"
           description="Full calendar of all of KC's upcoming shows."
         />
       }
