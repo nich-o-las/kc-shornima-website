@@ -1,5 +1,7 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useEffect } from 'react';
 
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -12,51 +14,54 @@ type IMainProps = {
 
 const Main = (props: IMainProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [isWindowScrolled, setIsWindowScrolled] = useState<boolean>(false);
   const router = useRouter();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === 0) {
+        setIsWindowScrolled(false);
+      } else {
+        setIsWindowScrolled(true);
+      }
+    });
+  }, []);
+
   return (
     <>
       {props.meta}
-      <div className="flex flex-col flex-grow w-full min-h-screen antialiased text-black">
-        <div className="fixed z-10 w-full py-2 bg-white border-b border-gray-300 shadow-md">
-          <div className="items-center justify-between max-w-screen-lg px-6 mx-auto lg:flex">
+      <div className="flex flex-col flex-grow w-full min-h-screen antialiased text-blue-900">
+        <div
+          className={`fixed z-10 w-full py-2 bg-white border-b border-gray-300 transition-all duration-300  ${
+            isWindowScrolled || isExpanded ? 'shadow-md' : ''
+          }`}
+        >
+          <div className="items-center justify-between max-w-screen-lg px-6 mx-auto md:flex">
             <div className="flex justify-between text-3xl uppercase font-alfa-slab">
-              KC Shornima
+              <Link href="/">
+                <a className="text-current border-none">KC Shornima</a>
+              </Link>
               <button
-                className="lg:hidden"
+                className="md:hidden"
                 type="button"
                 onClick={() => setIsExpanded(!isExpanded)}
               >
                 {isExpanded ? (
-                  <svg
-                    style={{
-                      stroke: 'black',
-                      fill: 'transparent',
-                      strokeWidth: 7,
-                    }}
-                    viewBox="0 0 40 40"
-                    width="40"
-                    height="40"
-                  >
-                    <path d="M 10,10 L 30,30 M 30,10 L 10,30" />
-                  </svg>
+                  <FontAwesomeIcon icon={faTimes} />
                 ) : (
-                  <svg viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="100" height="20" />
-                    <rect y="30" width="100" height="20" />
-                    <rect y="60" width="100" height="20" />
-                  </svg>
+                  <FontAwesomeIcon icon={faBars} />
                 )}
               </button>
             </div>
 
             <ul
-              className={`lg:flex text-right lg:text-left flex-wrap text-xl
+              className={`md:flex pt-8 md:pt-0 text-right md:text-left flex-wrap text-xl md:space-y-0 space-y-2
                 ${!isExpanded && ' hidden'}`}
             >
-              <li className="lg:mr-6">
+              <li className="md:mr-6">
                 <Link href="/">
                   <a
-                    className={`text-black border-none
+                    className={`text-current border-none
                       ${router.pathname === '/' && ' underline'}`}
                   >
                     Home
@@ -64,10 +69,10 @@ const Main = (props: IMainProps) => {
                 </Link>
               </li>
 
-              <li className="lg:mr-6">
+              <li className="md:mr-6">
                 <Link href="/shows/">
                   <a
-                    className={`text-black border-none
+                    className={`text-current border-none
                       ${router.pathname === '/shows' && ' underline'}`}
                   >
                     Shows
@@ -75,21 +80,22 @@ const Main = (props: IMainProps) => {
                 </Link>
               </li>
 
-              <li className="lg:mr-6">
+              {/* Commenting this out until ready to release the blog */}
+              {/* <li className="md:mr-6">
                 <Link href="/blog/">
                   <a
-                    className={`text-black border-none
+                    className={`text-current border-none
                       ${router.pathname === '/blog' && ' underline'}`}
                   >
                     Blog
                   </a>
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="lg:mr-6">
+              <li className="md:mr-6">
                 <Link href="/contact/">
                   <a
-                    className={`text-black border-none
+                    className={`text-current border-none
                       ${router.pathname === '/contact' && ' underline'}`}
                   >
                     Contact
@@ -100,7 +106,7 @@ const Main = (props: IMainProps) => {
           </div>
         </div>
 
-        <div className="w-full max-w-screen-lg px-6 pt-16 mx-auto">
+        <div className="w-full max-w-screen-lg px-6 pt-20 pb-8 mx-auto">
           <div className="w-full">{props.children}</div>
         </div>
 

@@ -11,7 +11,8 @@ export default function Shows(): JSX.Element {
         />
       }
     >
-      <h1 className="mt-2 text-2xl uppercase font-alfa-slab">Shows</h1>
+      <h1 className="text-2xl uppercase font-alfa-slab">Shows</h1>
+
       <p className="mt-2 lg:text-xl">
         Come see me live! You can view all of my upcoming dates on this
         calendar.

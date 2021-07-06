@@ -4,7 +4,7 @@ import { Main } from '../templates/Main';
 export default function Contact(): JSX.Element {
   return (
     <Main meta={<Meta title="hello" description="world" />}>
-      <h1 className="mt-2 text-2xl uppercase font-alfa-slab">Contact</h1>
+      <h1 className="text-2xl uppercase font-alfa-slab">Contact</h1>
 
       <form
         name="contact"
@@ -27,7 +27,7 @@ export default function Contact(): JSX.Element {
 
         <button
           type="submit"
-          className="block w-full px-4 py-2 mx-auto mt-2 text-xl text-white bg-black font-alfa-slab max-w-[20rem] shadow-lg"
+          className="block w-full px-4 py-2 mx-auto mt-2 text-xl text-white bg-blue-900 font-alfa-slab max-w-[20rem] shadow-lg"
         >
           Send
         </button>
