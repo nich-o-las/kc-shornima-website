@@ -25,6 +25,8 @@ export default function Contact(): JSX.Element {
           <textarea rows={4} name="message" className="w-full p-2 border" />
         </label>
 
+        <input type="hidden" name="form-name" value="pizzaOrder" />
+
         <button
           type="submit"
           className="block w-full px-4 py-2 mx-auto mt-2 text-xl text-white bg-blue-900 font-alfa-slab max-w-[20rem] shadow-lg"
