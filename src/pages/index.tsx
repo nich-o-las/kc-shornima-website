@@ -84,7 +84,7 @@ const Index = () => {
               >
                 <FontAwesomeIcon icon={faTwitter} />
 
-                <p>Follow my Instagram</p>
+                <p>Follow me on Twitter</p>
               </a>
             </li>
 
@@ -96,7 +96,7 @@ const Index = () => {
               >
                 <FontAwesomeIcon icon={faInstagram} />
 
-                <p>Follow me on Twitter</p>
+                <p>Follow me on Instagram</p>
               </a>
             </li>
           </ul>
