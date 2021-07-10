@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCalendar, faBook } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -83,6 +83,18 @@ const Index = () => {
                 className="flex items-center w-full space-x-2 text-current lg:space-x-reverse lg:flex-row-reverse"
               >
                 <FontAwesomeIcon icon={faTwitter} />
+
+                <p>Follow my Instagram</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="blank"
+                href="https://www.instagram.com/kcshornima/"
+                className="flex items-center w-full space-x-2 text-current lg:space-x-reverse lg:flex-row-reverse"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
 
                 <p>Follow me on Twitter</p>
               </a>
