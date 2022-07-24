@@ -28,9 +28,9 @@ const Main = (props: IMainProps) => {
   return (
     <>
       {props.meta}
-      <div className="flex flex-col flex-grow w-full min-h-screen antialiased text-blue-900">
+      <div className="flex flex-col flex-grow w-full min-h-screen antialiased bg-gray-900 text-gray-100">
         <div
-          className={`fixed z-10 w-full py-2 bg-white border-b border-gray-300 transition-all duration-300  ${
+          className={`fixed z-10 w-full py-2 text-gray-100 bg-gray-900 border-b border-b-gray-100 transition-all duration-300  ${
             isWindowScrolled || isExpanded ? 'shadow-md' : ''
           }`}
         >
@@ -74,8 +74,10 @@ const Main = (props: IMainProps) => {
               <li className="md:mr-6">
                 <Link href="/">
                   <a
-                    className={`text-current border-none
-                      ${router.pathname === '/' && ' underline'}`}
+                    className={`text-current border-none pb-1
+                      ${
+                        router.pathname === '/' && 'border-b-2 border-blue-700'
+                      }`}
                   >
                     Home
                   </a>
@@ -85,8 +87,11 @@ const Main = (props: IMainProps) => {
               <li className="md:mr-6">
                 <Link href="/shows/">
                   <a
-                    className={`text-current border-none
-                      ${router.pathname === '/shows' && ' underline'}`}
+                    className={`text-current border-none pb-1
+                      ${
+                        router.pathname === '/shows' &&
+                        'border-b-2 border-blue-700'
+                      }`}
                   >
                     Shows
                   </a>
@@ -108,8 +113,11 @@ const Main = (props: IMainProps) => {
               <li className="md:mr-6">
                 <Link href="/contact/">
                   <a
-                    className={`text-current border-none
-                      ${router.pathname === '/contact' && ' underline'}`}
+                    className={`text-current border-none pb-1
+                      ${
+                        router.pathname === '/contact' &&
+                        'border-b-2 border-blue-700'
+                      }`}
                   >
                     Contact
                   </a>
