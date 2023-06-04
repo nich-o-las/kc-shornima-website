@@ -21,14 +21,18 @@ const Index = () => {
 
       <div className="py-12 space-y-4 lg:flex lg:space-y-0">
         <div className="lg:text-xl lg:leading-7 lg:max-w-[41rem]">
-          KC is a comedian based out of Austin. She has performed at clubs and
-          theaters across the country with national headliners like Nate
+          KC is a comedian and writer based out of New York. She&apos;s
+          currently a staff writer on Saturday Night Live, writing for the
+          Weekend Update segment of the show, and previously wrote for Stephen
+          Colbert Presents Tooning Out the News. She was selected for the JFL
+          2022 New Faces showcase in Montreal, and has performed at comedy
+          festivals across the country including Moontower Just for Laughs. She
+          has performed at clubs and theaters with national headliners like Nate
           Bargatze, Dave Attell, Ari Shaffir, Shane Gillis, Paul Virzi, Dusty
-          Slay, John Crist, among others. KC has performed at comedy festivals
-          around the country including Moontower Just for Laughs. She was named
-          the Best Up-and-Coming Comedian in Nashville by the Nashville Scene
-          Magazine, and was a semifinalist for Stand-up NBC. She has also
-          written and performed on Kevin Hart&apos;s LOL Network.
+          Slay, John Crist, among others. She was named the Best Up-and-Coming
+          Comedian in Nashville by the Nashville Scene Magazine, and was a
+          semifinalist for Stand-up NBC. She has also written and performed on
+          Kevin Hart&apos;s LOL Network.
         </div>
 
         <div className="lg:ml-auto lg:pl-4">
