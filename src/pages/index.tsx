@@ -15,7 +15,7 @@ const Index = () => {
     >
       <img
         // eslint-disable-next-line global-require
-        src="/assets/images/jo-banner-img.png"
+        src="/assets/images/jo-banner-v2.png"
         alt="KC Shornima on stage at Zanies in Nashville, TN."
       />
 
@@ -27,12 +27,9 @@ const Index = () => {
           Colbert Presents Tooning Out the News. She was selected for the JFL
           2022 New Faces showcase in Montreal, and has performed at comedy
           festivals across the country including Moontower Just for Laughs. She
-          has performed at clubs and theaters with national headliners like Nate
-          Bargatze, Dave Attell, Ari Shaffir, Shane Gillis, Paul Virzi, Dusty
-          Slay, John Crist, among others. She was named the Best Up-and-Coming
-          Comedian in Nashville by the Nashville Scene Magazine, and was a
-          semifinalist for Stand-up NBC. She has also written and performed on
-          Kevin Hart&apos;s LOL Network.
+          was named the Best Up-and-Coming Comedian in Nashville by the
+          Nashville Scene Magazine, and was a semifinalist for Stand-up NBC. She
+          has also written and performed on Kevin Hart&apos;s LOL Network.
         </div>
 
         <div className="lg:ml-auto lg:pl-4">
