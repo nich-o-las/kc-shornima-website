@@ -16,7 +16,7 @@ const Index = () => {
       <img
         // eslint-disable-next-line global-require
         src="/assets/images/jo-banner-v2.png"
-        alt="KC Shornima on stage at Zanies in Nashville, TN."
+        alt="KC Shornima smiling in front of a pink background."
       />
 
       <div className="py-12 space-y-4 lg:flex lg:space-y-0">
